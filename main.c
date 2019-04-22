@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define N_ELEMENTS(arr) (sizeof(arr) / sizeof(*(arr)))
+
 int min_element(int* arr, int size)
 {
     int min = *arr;
@@ -24,6 +26,7 @@ int main()
     int i;
     for (i = 0; i < 10; ++i) {
         printf("%d ", arr[i]);
+
     }
     printf("\n");
 
